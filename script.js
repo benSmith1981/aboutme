@@ -40,12 +40,13 @@ fetch('https://api.github.com/users/benSmith1981/repos')
   .then(response => response.json())
   .then(data => {
     const projectsDiv = document.getElementById('project-list');
+    const keywords = ['ai', 'AI', 'iphone', 'website'];
+
     data.forEach(repo => {
-      // Filter repositories by keywords
-      const keywords = ['ai', 'iphone', 'website'];
       const isMatch = keywords.some(keyword =>
         repo.name.toLowerCase().includes(keyword)
       );
+
       if (isMatch) {
         const projectCard = document.createElement('div');
         projectCard.classList.add('col', 's12', 'm6', 'l4');
@@ -68,3 +69,4 @@ fetch('https://api.github.com/users/benSmith1981/repos')
     });
   })
   .catch(error => console.error(error));
+
