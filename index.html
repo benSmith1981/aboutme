@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Add Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">My Portfolio</a>
+    </div>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="about-me" class="section">
+    <div class="container">
+      <h4>About Me</h4>
+      <p>Insert your description here.</p>
+    </div>
+  </section>
+
+  <!-- Coding Ability Section -->
+  <section id="coding-ability" class="section">
+    <div class="container">
+      <h4>Coding Ability</h4>
+      <p>Insert details about your coding ability here.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h4>Projects</h4>
+      <div id="project-list"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h4>Contact</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="name" required>
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field">
+          <input type="email" id="email" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <textarea class="materialize-textarea" id="message" required></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Add Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Your custom JavaScript to fetch and display projects -->
+  <script src="script.js"></script>
+</body>
+</html>
